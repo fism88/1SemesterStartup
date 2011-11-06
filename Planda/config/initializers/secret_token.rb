@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Planda::Application.config.secret_token = '695b67df920ea335a9a061fcf790ac0f3e073730a6e49e842702d0cc10fb86a8a24659f456b9c889b474b13a2ae8e038c52df8a21537315f40cc931a7581b649'
+Planda::Application.config.secret_token = '55cb24d5572efa0296def1250c46296659eb07f8a4a6d12b2e83482eae151b4e8f85fc3289614b620e6528a7f5c13b354db8fb09473a8f6f8aaad859d3e5f897'
