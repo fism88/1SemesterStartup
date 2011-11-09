@@ -1,9 +1,12 @@
 Planda::Application.routes.draw do
+  get "pages/home"
+
+  get "pages/contact"
+
   resources :users
 
   resources :events
-  
-  root to: 'users',
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
