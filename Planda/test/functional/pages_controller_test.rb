@@ -6,8 +6,13 @@ class PagesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should get contact" do
-    get :contact
+  test "should get calendar" do
+    get :calendar
+    assert_response :success
+  end
+
+  test "should get all_events" do
+    get :all_events
     assert_response :success
   end
 

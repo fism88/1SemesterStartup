@@ -1,4 +1,10 @@
 Planda::Application.routes.draw do
+  get "pages/calendar"
+
+  get "pages/all_events"
+
+  get "calendar/index"
+
   get "pages/home"
 
   get "pages/contact"
@@ -57,6 +63,8 @@ Planda::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => "welcome#index"
+
+  root to: 'calendar#index', as: 'calendar'
 
   # See how all your routes lay out with "rake routes"
 
