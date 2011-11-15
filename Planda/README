@@ -1,4 +1,4 @@
-heroku use --> sharp-flower-6462
+heroku use --> plandaevents.heroku.com
 
 User -> name:string, email:string
 Event -> title:string, description:text, time:string, location:string,
