@@ -1,4 +1,6 @@
 Planda::Application.routes.draw do
+  get "home/index"
+
   get "pages/calendar"
 
   get "pages/all_events"

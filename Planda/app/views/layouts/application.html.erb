@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Planda</title>
+  <title>PlandaEvents</title>
   <%= csrf_meta_tag %>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -13,11 +13,13 @@
 <body>
   <div class="container">
     <header>
-      <%= image_tag("logo.png", :alt => "Sample App", :class => "round") %>
+      <%= image_tag("logo.png", :alt => "PlandaEvents", :class => "round") %>
       <nav class="round">
         <ul>
           <li><%= link_to "Home", '#' %></li>
-          <li><%= link_to "Help", '#' %></li>
+	  <li><%= link_to "Calendar", '#' %></li>
+	  <li><%= link_to "All Events", '#' %></li>
+          <li><%= link_to "Contact Us", '#' %></li>
           <li><%= link_to "Sign in", '#' %></li>
         </ul>
       </nav>
