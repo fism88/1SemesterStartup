@@ -10,17 +10,17 @@
   <!--[if lt IE 8]><%= stylesheet_link_tag 'bluepring/ie' %><![endif]-->
   <%= stylesheet_link_tag 'custom', :media => 'screen' %>
 </head>
-<body>
+<body style="text-align:center">
   <div class="container">
     <header>
       <%= image_tag("logo.png", :alt => "PlandaEvents", :class => "round") %>
       <nav class="round">
         <ul>
-          <li><%= link_to "Home", '#' %></li>
-	  <li><%= link_to "Calendar", '#' %></li>
-	  <li><%= link_to "All Events", '#' %></li>
-          <li><%= link_to "Contact Us", '#' %></li>
-          <li><%= link_to "Sign in", '#' %></li>
+          <li><%= link_to "Home", '/home/index' %></li>
+	  <li><%= link_to "Calendar", '/calendar/index' %></li>
+	  <li><%= link_to "All Events", '/pages/all_events' %></li>
+          <li><%= link_to "Contact Us", '/pages/contact' %></li>
+          <li><%= link_to "Sign in", '/home/signin' %></li>
         </ul>
         <ul>
           <%= "Categories" %>

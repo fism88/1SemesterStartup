@@ -1,4 +1,6 @@
 Planda::Application.routes.draw do
+  get "home/signin"
+
   get "home/index"
 
   get "pages/calendar"
@@ -66,7 +68,7 @@ Planda::Application.routes.draw do
   # just remember to delete public/index.html.
   # root :to => "welcome#index"
 
-  root to: "calendar#index"
+  root :to => "calendar#index"
 
   # See how all your routes lay out with "rake routes"
 
