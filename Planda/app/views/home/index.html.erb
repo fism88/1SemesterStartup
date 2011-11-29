@@ -14,7 +14,13 @@
 		</script>
 
 		<style>
-  			#box { 
+			#box-case {
+				width: 600px;
+				height: 180px;
+				position:relative;
+				top: 20px;
+			}
+  		#box { 
 				position:relative; 
 				top: 20px;
 				left: -170px; 
@@ -27,7 +33,7 @@
 				width: 500px;
 				height: 500px;
 				padding: 0.5em;
-				top: -21em;
+				top: 100px;
 			}
 			#box2 { 
 				position:relative; 
@@ -53,11 +59,11 @@
 			}
 			
 			#thumbs-down {
-				width: 60px;
-				height: 60px;
+				width: 100px;
+				height: 100px;
 				position:relative;
-				top: 200px;
-				right: 25px;
+				top: 0px;
+				right: 0px;
 			}
 			
 			#event-title {
@@ -82,18 +88,20 @@
 	<body>
 		<div id="events-container">
 			<div id="arrow-left"> </div>
-			<div id="box" style="border: 2px solid #000000;">
-				<p>Event 1</p>
-				<ul>
-					<li>Time: 10am-12pm</li>
-					<li>Location: GSB 3.106</li>
-					<li>Short description</li>
-			</div>
-			<div id="box2" style="border: 2px solid #000000;">
-				<p>Event 2</p>
-			</div>
-			<div id="box3" style="border: 2px solid #000000;">
-				<p>Event 3</p>
+			<div id="box-case" style="border: 3px solid #000000;">
+				<div id="box" style="border: 2px solid #000000;">
+					<p>Event 1</p>
+					<ul>
+						<li>Time: 10am-12pm</li>
+						<li>Location: GSB 3.106</li>
+						<li>Short description</li>
+				</div>
+				<div id="box2" style="border: 2px solid #000000;">
+					<p>Event 2</p>
+				</div>
+				<div id="box3" style="border: 2px solid #000000;">
+					<p>Event 3</p>
+				</div>
 			</div>
 			<div id="arrow-right"> </div>
 			<div id="box1-expanded" style="border: 2px solid #000000;">
