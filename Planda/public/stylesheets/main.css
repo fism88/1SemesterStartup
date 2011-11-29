@@ -1,0 +1,31 @@
+#testing {
+  font-size: 100px;
+  color: #f0f0f0;
+}
+
+body{
+	background-color:#C0C0C0;
+}
+#signin_box {
+	background-color:#FFFFFF;
+	width:800px;
+	text-align:center; 
+	margin:0 auto;
+	border-radius:2em;
+	border-radius:2em;
+	-moz-border-radius:2em;
+	-moz-border-radius:2em;
+	-webkit-border-bottom-right-radius:2em;
+	-webkit-border-bottom-left-radius:2em;
+}
+
+#signin_box .top {
+	height:30px;
+	background-color:#BBD9EE;
+	border-top-BBD9EEright-radius:2em;
+	border-top-right-radius:2em;
+	-moz-border-radius-topright:2em;
+	-moz-border-radius-topleft:2em;
+	-webkit-border-top-right-radius:2em;
+	-webkit-border-top-left-radius:2em;
+}

@@ -1,9 +1,9 @@
-
-<div class="mainContent"  style="background-color:#DDDDDD; width:800; text-align:center; margin:0 auto">
+<%= stylesheet_link_tag "main" %>
+<div id="signin_box">
 <div class="innerContent">
-<h1>Sign in!</h1>
+<p class="top">Login<hr /></p>
 
-<div>
+<div id="signin">
 	<%= form_tag("/home/index", :method => "get") do %>
 		<p>User Name: <input type="text" /></p>
 		<p>Password: <input type="text" /></p>
