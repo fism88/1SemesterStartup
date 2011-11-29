@@ -111,6 +111,15 @@
 	background-color:#206BA4;
 }
 
+#navFiller{
+	height:30px;
+	width: 128px;
+	float:right;
+	position:relative;
+	left:-20px;
+	background-color:#206BA4;
+}
+
 #rightInside{
 	position:relative;
 	width:620px;
