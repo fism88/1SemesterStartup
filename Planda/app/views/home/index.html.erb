@@ -7,9 +7,27 @@
 		<%= javascript_include_tag 'jquery-ui-1.8.11.custom.min.js' %>
 		<%= javascript_include_tag 'fullcalendar.min.js' %>
 
-		<script>
-			$("#box2").click(function() {
-				$("box1-expanded").hide();
+		<script type='text/javascript'>
+			$(document).ready(function() {
+				$("#box1-expanded").hide();
+				$("#box2-expanded").hide();
+				$("#box3-expanded").hide();
+	
+				$('#box1').click(function() {
+					$("#box2-expanded").hide();
+					$("#box3-expanded").hide();
+					$("#box1-expanded").show('slow');			
+				});
+				$('#box2').click(function() {
+					$("#box1-expanded").hide();
+					$("#box3-expanded").hide();
+					$("#box2-expanded").show('slow');			
+				});
+				$('#box3').click(function() {
+					$("#box1-expanded").hide();
+					$("#box2-expanded").hide();
+					$("#box3-expanded").show('slow');			
+				});
 			});
 		</script>
 
@@ -20,7 +38,7 @@
 				position:relative;
 				top: 20px;
 			}
-  		#box { 
+  		#box1 { 
 				position:relative; 
 				top: 8px;
 				left: -190px; 
@@ -29,6 +47,20 @@
 				padding: 0.5em; 
 			}
 			#box1-expanded {
+				position:relative;
+				width: 500px;
+				height: 500px;
+				padding: 0.5em;
+				top: 100px;
+			}
+			#box2-expanded {
+				position:relative;
+				width: 500px;
+				height: 500px;
+				padding: 0.5em;
+				top: 100px;
+			}
+			#box3-expanded {
 				position:relative;
 				width: 500px;
 				height: 500px;
@@ -87,7 +119,7 @@
 		<div id="events-container">
 			<div id="arrow-left"> </div>
 			<div id="box-case" style="border: 3px solid #000000;">
-				<div id="box" style="border: 2px solid #000000;">
+				<div id="box1" style="border: 2px solid #000000;">
 					<p>Event 1</p>
 					<ul>
 						<li>Time: 10am-12pm</li>
@@ -103,20 +135,38 @@
 			</div>
 			<div id="arrow-right"> </div>
 			<div id="box1-expanded" style="border: 2px solid #000000;">
-			<div id="event-title" style="border: 1px solid #000000;">
-				<p> Event 1 title </p>			
+				<div id="event-title" style="border: 1px solid #000000;">
+					<p> Event 1 title </p>			
+				</div>
+				<div id="event-info"></div>
+					<div id="event-image">
+				<%= image_tag "judo.png" %>
+					</div>					
 			</div>
-			<div id="event-info"></div>
-			<div id="event-image">
-				<img src="judo.png"/>
-			</div>					
-		</div>
+			<div id="box2-expanded" style="border: 2px solid #000000;">
+				<div id="event-title" style="border: 1px solid #000000;">
+					<p> Event 2 title </p>			
+				</div>
+				<div id="event-info"></div>
+					<div id="event-image">
+				<%= image_tag "judo.png" %>
+					</div>					
+			</div>
+			<div id="box3-expanded" style="border: 2px solid #000000;">
+				<div id="event-title" style="border: 1px solid #000000;">
+					<p> Event 3 title </p>			
+				</div>
+				<div id="event-info"></div>
+					<div id="event-image">
+				<%= image_tag "judo.png" %>
+					</div>					
+			</div>			
 	</body>
 			<div id="thumbs-up">
-				<img src="thumbsup.png"/>
+				<%= image_tag "thumbsup.png" %>
 			</div>
 			<div id="thumbs-down">
-				<img src="thumbsdown.png"/>
+				<%= image_tag "thumbsdown.png" %>
 			</div>	
 </html>
 
