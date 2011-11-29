@@ -35,18 +35,16 @@
 				position:relative;
 				top: 20px;
 				background-color:#000033;
-				filter: alpha(opacity=55);
-				-moz-opacity: .55; 
-				opacity: .55;
 			}
-  			#box1 { 
-				position:relative; 
-				top: 8px;
-				left: -190px; 
+  			#box1 {  
 				width: 150px; 
 				height: 150px; 
-				padding: 0.5em;
 				background-color:white; 
+				opacity: .55;
+				float: left;
+				position:relative;
+				top: 15px;
+				left: 30px;
 			}
 			#box1-expanded {
 				position:relative;
@@ -70,23 +68,32 @@
 				top: 20px;
 			}
 			#box2 { 
-				position:relative; 
-				left: 5px; 
-				top: -156px; 
 				width: 150px; 
 				height: 150px; 
-				padding: 0.5em; 
-				border-radius-top-left: 10px;
 				background-color:white; 
+				opacity: .55;
+				position:relative;
+				float:center;
+				top: 15px;
 			}
 			#box3 { 
-				position:relative;
-				top: -322px;
-				left: 200px;
 				width: 150px; 
 				height: 150px; 
-				padding: 0.5em; 
 				background-color:white; 
+				opacity: .55;
+				float:right;
+				position:relative;
+				top: -135px;
+				left: -30px;
+			}
+			#box1:hover {
+				opacity:1;			
+			}
+			#box2:hover {
+				opacity:1;			
+			}
+			#box3:hover {
+				opacity:1;			
 			}
 			#thumbs-up {
 				width: 60px;
@@ -118,7 +125,7 @@
 				right: 10px
 			}
 			#topContent {
-				height:200px;			
+				height:200px;		
 			}
 		</style>
 	</head>
@@ -127,17 +134,17 @@
 			<div id="topContent">			
 				<div id="arrow-left"> </div>
 				<div id="box-case">
-					<div id="box1" style="border: 2px solid #000000;">
+					<div id="box1">
 						<p>Event 1</p>
 						<ul>
 							<li>Time: 10am-12pm</li>
 							<li>Location: GSB 3.106</li>
 							<li>Short description</li>
 					</div>
-					<div id="box2" style="border: 2px solid #000000;">
+					<div id="box2">
 						<p>Event 2</p>
 					</div>
-					<div id="box3" style="border: 2px solid #000000;">
+					<div id="box3">
 						<p>Event 3</p>
 					</div>
 				</div>
