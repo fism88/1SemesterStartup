@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<meta charset="utf-8">
+		<title>PlandaEvents Home</title>
+		<link type="text/css" href="css/custom-theme/jquery-ui-1.8.16.custom.css" rel="stylesheet" />	
+		<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+		<style> 
+			#box { 
+				position:relative; 
+				top: -100px;
+				left: 20px; 
+				width: 150px; 
+				height: 150px; 
+				padding: 0.5em; 
+			}
+			#box1-expanded {
+				position:relative;
+				width: 300px;
+				height: 300px;
+				padding: 0.5em;
+				top: -21em;
+			}
+			#box2 { 
+				position:relative; 
+				left: 240px; 
+				top:-15em; 
+				width: 150px; 
+				height: 150px; 
+				padding: 0.5em; 
+			}
+			#box3 { 
+				position:relative;
+				top: -25em;
+				left: 460px;
+				width: 150px; 
+				height: 150px; 
+				padding: 0.5em; 
+			}
+			#img { float:left; width: 500px; height: 500px; }
+			#categories { 
+				position:relative;
+				top: 25px;
+				width: 210px; 
+				height: 180px; 
+				border: 1px solid black; 
+			}
+			#tabs { 
+				position:relative; 
+				left: -350px; 
+				top: -350px;
+				width: 700px; 
+				height: 700px; 
+				float:right; 
+			}
+			#datepicker {
+				position:relative;
+				left: 730px;
+				top: -300px;
+				width: 50px;
+				height: 50px;
+				
+			}
+			#events-container {
+				border: 3px solid black;
+				width: 650px;
+				height: 200px;
+				position:relative;
+				top: 25px;
+			}
+			
+			#arrow-right {
+				width: 0;
+				height: 0;
+				border-top: 60px solid transparent;
+				border-bottom: 60px solid transparent;
+
+				border-left: 60px solid green;
+				position:relative;
+				top: -33em;
+				right: -35em;
+			}
+			
+			#arrow-left {
+				width: 0;
+				height: 0;
+				border-top: 60px solid transparent;
+				border-bottom: 60px solid transparent; 
+
+				border-right:60px solid green;
+				position:relative;
+				top: 50px;
+				right: 2em;
+			}
+			#thumbs-up {
+				width: 60px;
+				height: 60px;
+				position:relative;
+				top: 25px;
+				right: 25px;
+			}
+			
+			#thumbs-down {
+				width: 60px;
+				height: 60px;
+				position:relative;
+				top: 25px;
+				right: 25px;
+			}
+			
+			#event-title {
+			
+			}
+			
+			#event-info {
+			
+			}
+			
+			#event-image {
+				width: 60px;
+				height: 60px;
+				position:relative;
+				top: 10px;
+				right: 10px
+			}
+		</style>
+		<script type="text/javascript">
+			$(function() {
+				$("#box-expanded").hide();
+			});
+		</script>
+		<script type="text/javascript">
+
+			$(function() {
+				$( "#tabs" ).tabs();
+				
+				$( "#datepicker" ).datepicker();
+				
+				$( "#draggable" ).draggable();
+			});
+			
+			$(function() {
+				$("#arrow-right").click(function() {
+					$("#box1-expanded").toggle();
+				});
+			});
+			
+			$(function() {
+				$("#box").click(function() {
+					$("box1-expanded").toggle();
+				});
+			});
+		</script>
+
+
+</div><!-- End demo -->
+	</head>
+
+	<body>
+		<h1> PlandaEvents </h1>
+		<img src="planda.png" />
+		<div id="categories">
+			<ul><b>Choose a Category</b>
+				<li><a href="arts_and_humanities.html">Arts and Humanities</a></li>
+				<li><a href="business_and_economics.html">Business and Economics</a></li>
+				<li><a href="policy_and_law.html">Policy and Law</a></li>
+				<li><a href="science_and_tech.html">Science and Tech.</a></li>
+				<li><a href="sports.html">Sports</a></li>
+				<li><a href="home.html">Your Major</a></li>
+			</ul>
+		</div>
+		<div class="demo">
+		<style>
+			tabs {
+				text-align:center;
+			}
+		</style>
+		<div id="tabs">
+			<ul>
+				<li><a href="#tabs-1">Home</a></li>
+				<li><a href="/calendar.html">Calendar</a></li>
+				<li><a href="/all_events.html">All Events</a></li>
+			</ul>
+			<div id="tabs-1">
+				<div id="events-container">
+					<div id="arrow-left"> </div>
+					<div id="box" style="border: 1px solid #000000;">
+						<p>Event 1</p>
+					</div>
+					<div id="box2" style="border: 1px solid #000000;">
+						<p>Event 2</p>
+					</div>
+					<div id="box3" style="border: 1px solid #000000;">
+						<p>Event 3</p>
+					</div>
+					<div id="arrow-right"> </div>
+					<div id="box1-expanded" style="border: 1px solid #000000;">
+						<div id="event-title"></div>
+						<div id="event-info"></div>
+						<div id="event-image>
+							<img src="judo.png"/>
+						</div>
+						<div id="thumbs-up">
+							<img src="thumbsup.png"/>
+						</div>
+						<div id="thumbs-down">
+							<img src="thumbsdown.png"/>
+						</div>						
+					</div>
+				</div>
+			</div>
+			<div id="tabs-2">
+				<p></p>
+			</div>
+			<div id="tabs-3">
+				<p></p>
+			</div>
+
+		<div class="demo">
+
+		</div>
+		<div id="datepicker"></div>
+	</body>
+</html>

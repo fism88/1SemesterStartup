@@ -1,0 +1,13 @@
+<div class="mainContent"  style="background-color:#DDDDDD; width:800; text-align:center; margin:0 auto">
+<div class="innerContent">
+<h1>Sign in!</h1>
+
+<div>
+	<%= form_tag("/home/index", :method => "get") do %>
+		<p>User Name: <input type="text" /></p>
+		<p>Password: <input type="text" /></p>
+		<input type="submit" value="Log in" />
+	<% end %>
+</div>
+</div>
+</div>
