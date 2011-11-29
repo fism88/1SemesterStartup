@@ -13,6 +13,10 @@ Planda::Application.routes.draw do
 
   get "pages/contact"
 
+  get "/home/arts_and_humanities"
+
+  get "home/science_and_tech"
+
   resources :users
 
   resources :events
