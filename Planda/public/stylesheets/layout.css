@@ -13,7 +13,7 @@
 	font-size: 14px;
 	font-weight: bold
 	height:16px;
-	background-color:#EBF4FA;
+	background-color:#cccccc;
 	bottom:0px;
 }
 
@@ -23,7 +23,7 @@
 	padding:0;
 	position:relative;
 	right:-140px;
-	bottom:10px;
+	bottom:0px;
 }
 
 #topnav li{
@@ -54,7 +54,8 @@
 }
 
 #content {
-	width:800px;
+	width:11000px;
+	
 	background-color: #EBF4FA;
 }
 #rightSide{
@@ -82,7 +83,8 @@
 	text-align: left;
 	text-indent: 0ex;
 	position:relative;
-	left:-10px;
+	left:-30px;
+	height: 190px;
 }
 
 #sidenav ul{
