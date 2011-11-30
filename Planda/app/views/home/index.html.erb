@@ -9,21 +9,29 @@
 				$("#box1-expanded").hide();
 				$("#box2-expanded").hide();
 				$("#box3-expanded").hide();
+				$("#thumbs-down").hide();
+				$("#thumbs-up").hide();
 	
 				$('#box1').click(function() {
 					$("#box2-expanded").hide();
 					$("#box3-expanded").hide();
-					$("#box1-expanded").show('slow');			
+					$("#box1-expanded").show('slow');
+					$("#thumbs-down").show('fast');
+					$("#thumbs-up").show('fast');			
 				});
 				$('#box2').click(function() {
 					$("#box1-expanded").hide();
 					$("#box3-expanded").hide();
-					$("#box2-expanded").show('slow');			
+					$("#box2-expanded").show('slow');
+					$("#thumbs-down").show();
+					$("#thumbs-up").show();				
 				});
 				$('#box3').click(function() {
 					$("#box1-expanded").hide();
 					$("#box2-expanded").hide();
-					$("#box3-expanded").show('slow');			
+					$("#box3-expanded").show('slow');
+					$("#thumbs-down").show();
+					$("#thumbs-up").show();				
 				});
 			});
 		</script>
@@ -35,6 +43,8 @@
 				position:relative;
 				top: 20px;
 				background-color:#000033;
+				-moz-border-radius: 15px;
+				border-radius: 15px;
 			}
   			#box1 {  
 				width: 150px; 
@@ -45,6 +55,8 @@
 				position:relative;
 				top: 15px;
 				left: 30px;
+				-moz-border-radius: 15px;
+				border-radius: 15px;
 			}
 			#box1-expanded {
 				position:relative;
@@ -52,6 +64,8 @@
 				height: 500px;
 				padding: 0.5em;
 				top: 20px;
+				-moz-border-radius: 15px;
+				border-radius: 15px;
 			}
 			#box2-expanded {
 				position:relative;
@@ -59,6 +73,8 @@
 				height: 500px;
 				padding: 0.5em;
 				top: 20px;
+				-moz-border-radius: 15px;
+				border-radius: 15px;
 			}
 			#box3-expanded {
 				position:relative;
@@ -66,6 +82,8 @@
 				height: 500px;
 				padding: 0.5em;
 				top: 20px;
+				-moz-border-radius: 15px;
+				border-radius: 15px;
 			}
 			#box2 { 
 				width: 150px; 
@@ -75,6 +93,8 @@
 				position:relative;
 				float:center;
 				top: 15px;
+				-moz-border-radius: 15px;
+				border-radius: 15px;
 			}
 			#box3 { 
 				width: 150px; 
@@ -85,6 +105,8 @@
 				position:relative;
 				top: -135px;
 				left: -30px;
+				-moz-border-radius: 15px;
+				border-radius: 15px;
 			}
 			#box1:hover {
 				opacity:1;			
@@ -99,18 +121,24 @@
 				width: 60px;
 				height: 60px;
 				position:relative;
+				top: -250px;
+				left: -200px;
 			}
 			
 			#thumbs-down {
 				width: 60px;
 				height: 60px;
 				position:relative;
+				top: -310px;
+				left: -140px;
 			}
 			
 			#event-title {
 				width: 500px;
 				height: 25px;
 				border-radius:25px;
+				-moz-border-radius: 15px;
+				border-radius: 15px;
 			}
 			
 			#event-info {
@@ -184,7 +212,7 @@
 			</div>	
 	</div>		
 	</body>
-			<div id="thumbs>
+			<div id="thumbs">
 				<div id="thumbs-up">
 					<%= image_tag "thumbsup.png" %>
 				</div>

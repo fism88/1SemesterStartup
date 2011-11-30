@@ -12,8 +12,15 @@
   <%= stylesheet_link_tag "layout" %>
 <%= stylesheet_link_tag "fullcalendar.css" %>
 <%= stylesheet_link_tag "fullcalendar.print.css" %>
+	<style>
+		#sidenav {
+			-moz-border-radius: 15px;
+			border-radius: 15px;
+			top: 50px;
+		}
+	</style>
 </head>
-<body style="text-align:center">
+<body style="text-align:center" bgcolor="cccccc">
 	<div id="mainContent">
   		<div id="topnav">
         		<ul>
@@ -26,11 +33,12 @@
    		</div>
 		<div id="content">
 			<div id="sidenav">
+				<img src="planda.png" />
 				<div id="navTitle">
 					<center>Choose a category</center>
 				</div>			
 				<ul>
-					<li><%= link_to "Arts and Humanities", 'arts_and_humanities.html.erb' %></li>
+					<li><%= link_to "Arts and Humanities", 'arts_and_humanities' %></li>
 					<li><%= link_to "Business and Economics", '/pages/arts' %></li>
 					<li><%= link_to "Policy and Law", '/pages/arts' %></li>
 					<li><%= link_to "Science and Technology", 'science_and_tech.html.erb' %></li>

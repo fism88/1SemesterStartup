@@ -13,7 +13,7 @@ Planda::Application.routes.draw do
 
   get "pages/contact"
 
-  get "/home/arts_and_humanities"
+  get "home/arts_and_humanities"
 
   get "home/science_and_tech"
 
@@ -27,6 +27,8 @@ Planda::Application.routes.draw do
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
+
+  match 'home/arts_and_humanities' => 'home#arts_and_humanities'
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
