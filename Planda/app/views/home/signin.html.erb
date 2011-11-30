@@ -1,15 +1,34 @@
 <%= stylesheet_link_tag "main" %>
-<div id="signin_box">
-<div class="innerContent">
-<p class="top">Login<hr /></p>
+<center>
+<div id="background">
+	<div id="signin_box" style="opacity:.75">
+		<div class="innerContent">
+			<p class="top">Login</p>
 
-<div id="signin">
-	<%= form_tag("/home/index", :method => "get") do %>
-		<p>User Name: <input type="text" /></p>
-		<p>Password: <input type="text" /></p>
-		<input type="submit" value="Log in" />
-	<% end %>
+
+		</div>
+	</div>
+	<div id="signin">
+		<%= form_tag("/home/index", :method => "get") do %>
+			<div id="textUserPass">Username</div>
+			<input id="userPass" type="text" />
+			<br />
+			<br />
+			<div id="textUserPass">Password</div>			
+			<input id="userPass" type="text" />
+			<br />
+			<br />
+			<div id="textUserPass" style="position:relative; left:-170px;">
+				<input type="checkbox" />Remember Me
+				<div id="submit">
+					<%= link_to "Login", '/home/index' %>
+				</div>
+			</div>
+			<div id="regLost">
+				<a href="#">Register</a> | <a href="#">Lost Your Password?</a>
+			</div>
+		<% end %>
+	</div>
 </div>
-</div>
-</div>
+</center>
 

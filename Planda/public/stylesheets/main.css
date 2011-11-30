@@ -4,28 +4,96 @@
 }
 
 body{
-	background-color:#C0C0C0;
+	background-color:#ffffff;
 }
-#signin_box {
-	background-color:#FFFFFF;
-	width:800px;
-	text-align:center; 
-	margin:0 auto;
+
+#background{
+	background-image: url(../images/planda.png);
 	border-radius:2em;
 	border-radius:2em;
 	-moz-border-radius:2em;
 	-moz-border-radius:2em;
 	-webkit-border-bottom-right-radius:2em;
-	-webkit-border-bottom-left-radius:2em;
+	-webkit-border-bottom-left-radius:2em;	
+	width: 849px;
+	height: 747px;
 }
 
-#signin_box .top {
-	height:30px;
-	background-color:#BBD9EE;
-	border-top-BBD9EEright-radius:2em;
-	border-top-right-radius:2em;
-	-moz-border-radius-topright:2em;
-	-moz-border-radius-topleft:2em;
-	-webkit-border-top-right-radius:2em;
-	-webkit-border-top-left-radius:2em;
+
+#signin_box {
+	background-color:black;
+	position: relative;
+	top: 470px;
+	width:500px;
+	height: 230px;
+	text-align:center; 
+	margin:0 auto;
+}
+
+
+#userPass{
+	opacity: 100%;
+	width: 440px;
+	height: 40px;
+	float:center;
+}
+#signin{
+	color: white;
+	opacity: 1;
+	position: relative;
+	top: 255px;
+}
+
+#textUserPass{
+	position:relative;
+	left:-189px;
+	font-size:12px;	
+	font-family:"Arial";
+	font-weight:bold;
+}
+
+#submit{
+	display:block;
+	width:50px;
+	font-weight:bold;
+	color:#FFFFFF;
+	background-color:#EBF4FA;
+	text-align:center;
+	padding:4px;
+	text-decoration:none;
+	border-radius:.5em;
+	border-radius:.5em;
+	-moz-border-radius:.5em;
+	-moz-border-radius:.5em;
+	-webkit-border-bottom-right-radius:.5em;
+	-webkit-border-bottom-left-radius:.5em;
+	border-style:solid;
+	border-color:#000033;
+	border-width:1px;
+	position:relative;
+	top:-22px;
+	right: -360px;
+}
+
+#regLost{
+	position:relative;
+	left:-130px;
+	top: -15px;
+	font-size:12px;	
+	font-family:"Arial";
+	font-weight:bold;
+	
+}
+
+#regLost a{
+	color:white;
+}
+
+#submit a{
+	color:#000033;
+	text-decoration:none;
+}
+
+#submit:hover{
+	background-color:#6699cc;
 }
