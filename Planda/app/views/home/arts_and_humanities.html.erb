@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+		<%= stylesheet_link_tag "main" %>
 		<%= javascript_include_tag 'jquery-1.5.2.min.js' %>
 		<%= javascript_include_tag 'jquery-ui-1.8.11.custom.min.js' %>
 
@@ -117,6 +118,9 @@
 			#box3:hover {
 				opacity:1;			
 			}
+			#box1 p{font-size:13px; font-weight:bold}
+			#box2 p{font-size:13px; font-weight:bold}
+			#box3 p{font-size:13px; font-weight:bold}
 			#thumbs-up {
 				width: 60px;
 				height: 60px;
@@ -159,6 +163,12 @@
 				position:relative;
 				top:-100px;			
 			}
+			ul{
+				list-style:none;
+			}
+			#box1 ul{position:relative; top:-10px;}
+			#box2 ul{position:relative; top:-20px;}
+			#box3 ul{position:relative; top:-10px;}
 		</style>
 	</head>
 	<body>
@@ -167,26 +177,29 @@
 				<div id="arrow-left"> </div>
 				<div id="box-case">
 					<div id="box1">
-						<p>Austin Photography Workshops - One Light Workshop</p>
+						<br />
+						<p><b>Austin Photography Workshops - One Light Workshop</b></p>
 						<ul>
-							<li>Date: 12/2</li>						
-							<li>Time: 10am-6pm</li>
-							<li>Location: ART lobby</li>
+							<li><b>Date:</b> 12/2</li>						
+							<li><b>Time:</b> 10am-6pm</li>
+							<li><b>Location:</b> ART lobby</li>
 					</div>
 					<div id="box2">
-						<p>Germany during the Cold War Photography Exhibit</p>
+						<br />
+						<p><b>Germany during the Cold War Photography Exhibit</b></p>
 						<ul>
-							<li>Date: 12/2</li>
-							<li>Time: 1-5pm</li>
-							<li>Location: Harry Ransom Center</li>
+							<li><b>Date:</b> 12/2</li>
+							<li><b>Time:</b> 1-5pm</li>
+							<li><b>Location:</b> Harry Ransom Center</li>
 						</ul>
 					</div>
 					<div id="box3">
-						<p>Acoustic Guitarapalooza</p>
+						<br />
+						<p><b>Acoustic Guitarapalooza</b></p>
 						<ul>
-							<li>Date: 12/2</li>
-							<li>Time: 5-11pm</li>
-							<li>Location: Hole in the Wall</li>
+							<li><b>Date:</b> 12/2</li>
+							<li><b>Time:</b> 5-11pm</li>
+							<li><b>Location:</b> Hole in the Wall</li>
 						</ul>
 					</div>
 				</div>
