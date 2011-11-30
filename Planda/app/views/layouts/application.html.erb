@@ -18,9 +18,28 @@
 			border-radius: 5px;
 			top: 50px;
 		}
+		
+		#logo {
+			height: 50px;
+			width: 50px;
+			top: -500px;
+			padding-top: 1em;
+			padding-left: 76px;
+			padding-right: 1em;
+		}
+		#name {
+			
+		}
 	</style>
+
+
+	<div id="logo">
+		<%= image_tag "planda2.png" %>
+	</div>
+
 </head>
-<body style="text-align:center">
+	<div id="name"><font face="franklin gothic" color="blue" size="28pt"><b>PlandaEvents</b></font></div>
+<body style="text-align:center" bgcolor="gray">
 	<div id="mainContent">
   		<div id="topnav">
         		<ul>
@@ -31,6 +50,7 @@
         		</ul>
 			<div id="navFiller"></div>
    		</div>
+
 		<div id="content">
 			<div id="sidenav">
 				<div id="navTitle">
@@ -45,7 +65,6 @@
 					<li><%= link_to "Your Major", '/pages/arts' %></li>
 				</ul>		
 			</div>
-			<img src="planda.png"/>
 			<div id="rightSide">
 				
 				<center>

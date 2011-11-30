@@ -11,13 +11,16 @@
 				$("#box3-expanded").hide();
 				$("#thumbs-down").hide();
 				$("#thumbs-up").hide();
+				$("#calendar-button").hide();
 	
 				$('#box1').click(function() {
 					$("#box2-expanded").hide();
 					$("#box3-expanded").hide();
 					$("#box1-expanded").show('slow');
+					$("#calendar-button").show();
 					$("#thumbs-down").show();
-					$("#thumbs-up").show();			
+					$("#thumbs-up").show();	
+					$("#box1").animate({opacity: 0.25});		
 				});
 				$('#box2').click(function() {
 					$("#box1-expanded").hide();
@@ -37,6 +40,16 @@
 		</script>
 
 		<style>
+			#button {
+				width: 100px;
+				height: 25px;
+				position:relative;
+				top: -280px;
+				left: -170px;
+				background-color:#aaaaaa;
+				-moz-border-radius: 8px;
+				border-radius: 8px;
+			}
 			#box-case {
 				width: 600px;
 				height: 180px;
@@ -50,7 +63,7 @@
 				width: 150px; 
 				height: 150px; 
 				background-color:white; 
-				opacity: .55;
+				opacity: .75;
 				float: left;
 				position:relative;
 				top: 15px;
@@ -89,7 +102,7 @@
 				width: 150px; 
 				height: 150px; 
 				background-color:white; 
-				opacity: .55;
+				opacity: .75;
 				position:relative;
 				float:center;
 				top: 15px;
@@ -100,7 +113,7 @@
 				width: 150px; 
 				height: 150px; 
 				background-color:white; 
-				opacity: .55;
+				opacity: .75;
 				float:right;
 				position:relative;
 				top: -135px;
@@ -136,9 +149,10 @@
 			#event-title {
 				width: 500px;
 				height: 25px;
+				font-size: 14pt;
 				border-radius:25px;
-				-moz-border-radius: 15px;
-				border-radius: 15px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
 			}
 			
 			#event-info {
@@ -159,6 +173,22 @@
 				position:relative;
 				top:-100px;			
 			}
+			#left-arrow {
+				position:relative;
+				top: -200px;
+				left: -295px;
+			}
+			#right-arrow {
+				position:relative;
+				top: -230px;
+				right: -296px;
+				
+			}
+			#calendar-button {
+				position:relative;
+				top: -230px;
+				left: -170px;
+			}
 		</style>
 	</head>
 	<body>
@@ -169,7 +199,7 @@
 					<div id="box1">
 						<p>Austin Photography Workshops - One Light Workshop</p>
 						<ul>
-							<li>Date: 12/2</li>						
+							<li>Date: 11/30</li>						
 							<li>Time: 10am-6pm</li>
 							<li>Location: ART lobby</li>
 					</div>
@@ -195,11 +225,21 @@
 	<div id="bottomDiv"		
 			<div id="box1-expanded" style="border: 2px solid #000000;">
 				<div id="event-title" style="border: 1px solid #000000;">
-					<p> Event 1 title </p>			
+					<p><b> Austin Photography Workshops - One Light Workshop</b> </p>			
 				</div>
 				<div id="event-info"></div>
+					<br></br>
+					<ul>
+						<li><font size="2pt" face="arial" color="black"><b>Date:</b> <font color="blue"> 11/30</font></font></li>
+						<li><font size="2pt" face="arial" color="black"><b>Time:</b> <font color="blue"> 10am-6pm</font></font></li>
+						<li><font size="2pt" face="arial" color="black"><b>Location:</b><font color="blue"> ART lobby</font></font></li>
+						<br></br>
+						<li><font size="2pt" face="arial" color="black"><b>Description:</b> <font color="blue">This is an all-day workshop from 10 am - 6 pm. We'll start by learning exposure basics on a DSLR camera,and spend the rest of the day learning how to create amazingly lit photos using only a single flash. We'll
+spend a short time looking at how to improve the quality of on-camera flash, then learn the many, many
+ways to create creative, beautiful light by taking that flash off the camera.</font></font></li>
+					</ul>
 					<div id="event-image">
-				<%= image_tag "judo.png" %>
+				<%= image_tag "camera.jpg" %>
 					</div>					
 			</div>
 			<div id="box2-expanded" style="border: 2px solid #000000;">
@@ -217,11 +257,24 @@
 				</div>
 				<div id="event-info"></div>
 					<div id="event-image">
-				<%= image_tag "judo.png" %>
+						<%= image_tag "judo.png" %>
 					</div>					
 			</div>	
 	</div>		
 	</body>
+			<div id="calendar-button">
+
+			<a href="/calendar/index"> <button>Add to Calendar</button></a>
+
+			</div>
+				
+			</div>
+			<div id="left-arrow">
+				<%= image_tag "left.png" %>
+			</div>
+			<div id="right-arrow">
+				<%= image_tag "right.png" %>
+			</div>
 			<div id="thumbs">
 				<div id="thumbs-up">
 					<%= image_tag "thumbsup.png" %>

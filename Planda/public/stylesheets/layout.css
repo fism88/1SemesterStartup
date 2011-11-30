@@ -46,16 +46,13 @@
 	background-color:#003399;
 }
 
-
-
-
 #navTitle{
 	font-weight:bold;
 }
 
 #content {
-	width:11000px;
-	
+	width:920px;
+	left: 500px;
 	background-color: #EBF4FA;
 }
 #rightSide{
@@ -80,10 +77,10 @@
 	letter-spacing: normal;
 	text-decoration: none;
 	text-transform: none;
-	text-align: left;
+	text-align: right;
 	text-indent: 0ex;
 	position:relative;
-	left:-30px;
+	left:-150px;
 	height: 190px;
 }
 
