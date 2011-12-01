@@ -171,6 +171,16 @@
 				right: -296px;
 				
 			}
+			#thumbs-image{
+				width:25px;
+			}
+			#arrow-image{
+				width:30px;
+			}
+			p{
+				font-weight:bold;
+			}		
+			
 		</style>
 	</head>
 	<body>
@@ -181,22 +191,21 @@
 					<div id="box1">
 						<p><font color="ffffff">IEEE LAN Party </font></p>
 						<ul>
-							<li>Time: 7-8pm</li>
-							<li>Location: ENS 31NP</li>
-							<li>Short description</li>
+							<li><b>Time:</b> 7-8pm</li>
+							<li><b>Location:</b> ENS 31NP</li>
 					</div>
 					<div id="box2">
 						<p>Random Hacks of Kindness</p>
 						<ul>
-							<li>Time: 10am-11pm</li>
-							<li>Location: Capital City Event Center</li>
+							<li><b>Time:</b> 10am-11pm</li>
+							<li><b>Location:</b> Capital City Event Center</li>
 						</ul>
 					</div>
 					<div id="box3">
 						<p>ACM Broomball</p>
 						<ul>
-							<li>Time: 8-10pm</li>
-							<li>Location: Chaparral Ice</li>
+							<li><b>Time:</b> 8-10pm</li>
+							<li><b>Location:</b> Chaparral Ice</li>
 						</ul>
 					</div>
 				</div>
@@ -233,18 +242,18 @@
 	</div>		
 	</body>
 			<div id="left-arrow">
-				<%= image_tag "left.png" %>
+				<%= image_tag "left.png", :id=>"arrow-image" %>
 			</div>
 			<div id="right-arrow">
-				<%= image_tag "right.png" %>
+				<%= image_tag "right.png", :id=>"arrow-image" %>
 			</div>
 
 			<div id="thumbs">
 				<div id="thumbs-up">
-					<%= image_tag "thumbsup.png" %>
+					<%= image_tag "thumbsup.png", :id=>"thumbs-image" %>
 				</div>
 				<div id="thumbs-down">
-					<%= image_tag "thumbsdown.png" %>
+					<%= image_tag "thumbsdown.png", :id=>"thumbs-image" %>
 				</div>	
 			</div>
 </html>

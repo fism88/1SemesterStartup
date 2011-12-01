@@ -19,8 +19,7 @@
 					$("#box1-expanded").show('slow');
 					$("#calendar-button").show();
 					$("#thumbs-down").show();
-					$("#thumbs-up").show();	
-					$("#box1").animate({opacity: 0.25});		
+					$("#thumbs-up").show();			
 				});
 				$('#box2').click(function() {
 					$("#box1-expanded").hide();
@@ -73,6 +72,7 @@
 			}
 			#box1-expanded {
 				position:relative;
+				background-color: #000033; 
 				width: 500px;
 				height: 500px;
 				padding: 0.5em;
@@ -150,21 +150,23 @@
 				width: 500px;
 				height: 25px;
 				font-size: 14pt;
-				border-radius:25px;
-				-moz-border-radius: 5px;
-				border-radius: 5px;
+				border-radius:3px;
+				-moz-border-radius: 3px;
+				border-radius: 3px;
 			}
 			
 			#event-info {
-			
+				position:relative;
+				top:-430px;
 			}
 			
 			#event-image {
-				width: 60px;
-				height: 60px;
+				width: 230px;
 				position:relative;
-				top: 10px;
-				right: 10px
+				top: 0px;
+				right: 110px
+			}
+			#imageimageimage{
 			}
 			#topContent {
 				height:300px;		
@@ -189,6 +191,42 @@
 				top: -230px;
 				left: -170px;
 			}
+			#thumbs-up-image {
+			width:25px;
+			position:relative;			
+			top:-50px;
+			right:-250px;
+			width:30px;		
+			}
+			#thumbs-down-image {
+			width:25px;
+			position:relative;			
+			top:-50px;
+			right:-240px;
+			width:30px;
+			}
+			#left-arrow-image {
+			width:30px;
+			position:relative;
+			left:-203px; top:-70px;
+			}
+			#right-arrow-image {
+			width:30px;
+			position:relative;
+			right:-355px; top:-72px;
+			}
+			p{
+				font-weight:bold;
+			}
+			ul{
+				list-style:none;
+			}
+			#info ul{
+				text-align:left;
+				position:relative;
+				top:-140px;
+				right:-280px;
+			}
 		</style>
 	</head>
 	<body>
@@ -199,49 +237,56 @@
 					<div id="box1">
 						<p>Austin Photography Workshops - One Light Workshop</p>
 						<ul>
-							<li>Date: 11/30</li>						
-							<li>Time: 10am-6pm</li>
-							<li>Location: ART lobby</li>
+							<li><b>Date:</b> 11/30</li>						
+							<li><b>Time:</b> 10am-6pm</li>
+							<li><b>Location:</b> ART lobby</li>
 					</div>
 					<div id="box2">
 						<p>Germany during the Cold War Photography Exhibit</p>
 						<ul>
-							<li>Date: 12/2</li>
-							<li>Time: 1-5pm</li>
-							<li>Location: Harry Ransom Center</li>
+							<li><b>Date:</b> 12/2</li>
+							<li><b>Time:</b> 1-5pm</li>
+							<li><b>Location:</b> Harry Ransom Center</li>
 						</ul>
 					</div>
 					<div id="box3">
 						<p>Acoustic Guitarapalooza</p>
 						<ul>
-							<li>Date: 12/2</li>
-							<li>Time: 5-11pm</li>
-							<li>Location: Hole in the Wall</li>
+							<li><b>Date:</b> 12/2</li>
+							<li><b>Time:</b> 5-11pm</li>
+							<li><b>Location:</b> Hole in the Wall</li>
 						</ul>
 					</div>
+				<%= image_tag "left.png", :id=>"left-arrow-image" %>
+				<%= image_tag "right.png", :id=>"right-arrow-image" %>
+			
 				</div>
 				<div id="arrow-right"> </div>
 			</div>	
 	<div id="bottomDiv"		
 			<div id="box1-expanded" style="border: 2px solid #000000;">
-				<div id="event-title" style="border: 1px solid #000000;">
-					<p><b> Austin Photography Workshops - One Light Workshop</b> </p>			
+				<div id="event-title" style="background:white; opacity:.90;">
+					<p style="position:relative; top:-2px;"><b> Austin Photography Workshops - One Light Workshop</b> </p>			
 				</div>
-				<div id="event-info"></div>
+				<div id="backgroundFiller" style="background:white; opacity:.9; width:500px; height:450px; -moz-border-radius: 3px; border: 3px; position:relative; top:20px;"></div>
+				<div id="event-info">
 					<br></br>
-					<ul>
-						<li><font size="2pt" face="arial" color="black"><b>Date:</b> <font color="blue"> 11/30</font></font></li>
-						<li><font size="2pt" face="arial" color="black"><b>Time:</b> <font color="blue"> 10am-6pm</font></font></li>
-						<li><font size="2pt" face="arial" color="black"><b>Location:</b><font color="blue"> ART lobby</font></font></li>
+
+					<div id="imageimageimage">
+				<%= image_tag "camera.jpg", :id=>"event-image" %>
+					<div id="info"><ul>
+						<li><font size="3pt" face="arial" color="black"><b>Date:</font></b> <font color="black"> 11/30</font></li>
+						<li><font size="3pt" face="arial" color="black"><b>Time:</font></b> <font color="black"> 10am-6pm</font></font></li>
+						<li><font size="3pt" face="arial" color="black"><b>Location:</font></b><font color="black"> ART lobby</font></font></li>
+				</ul></div>					
+					</div>	
+					<ul style="position:relative; top:-100px;">
 						<br></br>
-						<li><font size="2pt" face="arial" color="black"><b>Description:</b> <font color="blue">This is an all-day workshop from 10 am - 6 pm. We'll start by learning exposure basics on a DSLR camera,and spend the rest of the day learning how to create amazingly lit photos using only a single flash. We'll
+						<li><font size="3pt" face="arial" color="black"><b>Description:</font></b> <font color="black">This is an all-day workshop from 10 am - 6 pm. We'll start by learning exposure basics on a DSLR camera,and spend the rest of the day learning how to create amazingly lit photos using only a single flash. We'll
 spend a short time looking at how to improve the quality of on-camera flash, then learn the many, many
 ways to create creative, beautiful light by taking that flash off the camera.</font></font></li>
-					</ul>
-					<div id="event-image">
-				<%= image_tag "camera.jpg" %>
-					</div>					
-			</div>
+					</ul>				
+			</div></div>
 			<div id="box2-expanded" style="border: 2px solid #000000;">
 				<div id="event-title" style="border: 1px solid #000000;">
 					<p> Germany during the Cold War Photography Exhibit </p>			
@@ -264,23 +309,18 @@ ways to create creative, beautiful light by taking that flash off the camera.</f
 	</body>
 			<div id="calendar-button">
 
-			<a href="/calendar/index"> <button>Add to Calendar</button></a>
+			<a href="/calendar/index" style="position:relative; top:-40px; right:-60px;"> <button>Add to Calendar</button></a>
 
 			</div>
 				
 			</div>
-			<div id="left-arrow">
-				<%= image_tag "left.png" %>
-			</div>
-			<div id="right-arrow">
-				<%= image_tag "right.png" %>
-			</div>
+
 			<div id="thumbs">
 				<div id="thumbs-up">
-					<%= image_tag "thumbsup.png" %>
+					<%= image_tag "thumbsup.png", :id=>"thumbs-up-image" %>
 				</div>
 				<div id="thumbs-down">
-					<%= image_tag "thumbsdown.png" %>
+					<%= image_tag "thumbsdown.png", :id=>"thumbs-down-image" %>
 				</div>	
 			</div>
 </html>
