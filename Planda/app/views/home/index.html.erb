@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-		<%= stylesheet_link_tag "main" %>
 		<%= javascript_include_tag 'jquery-1.5.2.min.js' %>
 		<%= javascript_include_tag 'jquery-ui-1.8.11.custom.min.js' %>
 
@@ -51,7 +50,7 @@
 				width: 150px; 
 				height: 150px; 
 				background-color:white; 
-				opacity: .55;
+				opacity: .75;
 				float: left;
 				position:relative;
 				top: 15px;
@@ -90,7 +89,7 @@
 				width: 150px; 
 				height: 150px; 
 				background-color:white; 
-				opacity: .55;
+				opacity: .75;
 				position:relative;
 				float:center;
 				top: 15px;
@@ -101,7 +100,7 @@
 				width: 150px; 
 				height: 150px; 
 				background-color:white; 
-				opacity: .55;
+				opacity: .75;
 				float:right;
 				position:relative;
 				top: -135px;
@@ -118,9 +117,6 @@
 			#box3:hover {
 				opacity:1;			
 			}
-			#box1 p{font-size:13px; font-weight:bold}
-			#box2 p{font-size:13px; font-weight:bold}
-			#box3 p{font-size:13px; font-weight:bold}
 			#thumbs-up {
 				width: 60px;
 				height: 60px;
@@ -164,12 +160,17 @@
 				position:relative;
 				top:-100px;			
 			}
-			ul{
-				list-style:none;
+			#left-arrow {
+				position:relative;
+				top: -200px;
+				left: -295px;
 			}
-			#box1 ul{}
-			#box2 ul{}
-			#box3 ul{}
+			#right-arrow {
+				position:relative;
+				top: -230px;
+				right: -296px;
+				
+			}
 		</style>
 	</head>
 	<body>
@@ -178,26 +179,24 @@
 				<div id="arrow-left"> </div>
 				<div id="box-case">
 					<div id="box1">
-						<br />
-						<p><b>IEEE LAN Party </b></p>
+						<p><font color="ffffff">IEEE LAN Party </font></p>
 						<ul>
-							<li><b>Time:</b> 7-8pm</li>
-							<li><b>Location:</b> ENS 31NP</li>
+							<li>Time: 7-8pm</li>
+							<li>Location: ENS 31NP</li>
+							<li>Short description</li>
 					</div>
 					<div id="box2">
-						<br />
-						<p><b>Random Hacks of Kindness</b></p>
+						<p>Random Hacks of Kindness</p>
 						<ul>
-							<li><b>Time:</b> 10am-11pm</li>
-							<li><b>Location:</b> Capital City Event Center</li>
+							<li>Time: 10am-11pm</li>
+							<li>Location: Capital City Event Center</li>
 						</ul>
 					</div>
 					<div id="box3">
-						<br />
-						<p><b>ACM Broomball</b></p>
+						<p>ACM Broomball</p>
 						<ul>
-							<li><b>Time:</b> 8-10pm</li>
-							<li><b>Location:</b> Chaparral Ice</li>
+							<li>Time: 8-10pm</li>
+							<li>Location: Chaparral Ice</li>
 						</ul>
 					</div>
 				</div>
@@ -233,6 +232,13 @@
 			</div>	
 	</div>		
 	</body>
+			<div id="left-arrow">
+				<%= image_tag "left.png" %>
+			</div>
+			<div id="right-arrow">
+				<%= image_tag "right.png" %>
+			</div>
+
 			<div id="thumbs">
 				<div id="thumbs-up">
 					<%= image_tag "thumbsup.png" %>
